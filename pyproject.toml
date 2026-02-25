@@ -1,0 +1,17 @@
+[project]
+name = "gemini-live-trading-agent"
+version = "1.0.0"
+description = "Real-time voice trading assistant powered by Gemini Live API on Google Cloud"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=1.44.0",
+    "google-cloud-aiplatform>=1.50.0",
+    "ccxt>=4.0.0",
+    "numpy>=1.26.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
