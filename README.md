@@ -223,6 +223,35 @@ This project is part of the **JARVIS** distributed AI cluster:
 
 This software is provided for educational and research purposes. Trading cryptocurrencies involves significant risk. Always do your own research and never trade with funds you cannot afford to lose.
 
+
+
+## What is Gemini Trading Agent?
+
+An autonomous trading agent powered by Google's Gemini AI. It monitors crypto markets in real-time, analyzes price patterns, and executes trades on MEXC Futures — all without human intervention.
+
+Unlike rule-based bots, this agent **understands market context** using Gemini's language model to interpret news, sentiment, and technical patterns simultaneously.
+
+## How It Works
+
+```
+1. Market Feed → Live price data from MEXC WebSocket
+2. Gemini Analysis → "BTC showing bullish divergence on 4H, 
+   volume increasing, resistance at $68,500"
+3. Signal Generation → LONG signal, confidence 78%
+4. Risk Check → Position size calculated, TP/SL set
+5. Execution → Order placed on MEXC Futures
+6. Alert → Telegram: "LONG BTC at $67,200, TP $70,560, SL $65,856"
+```
+
+## Why Gemini?
+
+| Feature | Benefit |
+|---------|---------|
+| **Real-time analysis** | Processes market data + news simultaneously |
+| **Context awareness** | Understands market regime (trending/ranging) |
+| **Multi-timeframe** | Analyzes 1m, 5m, 15m, 1H, 4H, 1D |
+| **Natural language** | Explains decisions in plain text |
+
 ---
 
 ## License
