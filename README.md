@@ -24,6 +24,21 @@
 
 ---
 
+
+
+## Architecture
+
+```mermaid
+graph LR
+    Market[Market Feed] --> Gemini[Gemini AI]
+    Gemini --> Signals[Signal Analysis]
+    Signals --> Decision{Trade?}
+    Decision -->|Yes| Execute[MEXC API]
+    Decision -->|No| Wait[Monitor]
+    Execute --> Alert[Telegram Alert]
+```
+
+
 ## Overview
 
 **GEMINI·LIVE·TRADER** is a voice-first trading assistant built on the **Gemini Live API**. It lets you place orders, analyze markets, and manage positions entirely through voice commands — with real-time AI analysis powered by Gemini.
