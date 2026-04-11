@@ -5,7 +5,7 @@ description = "Real-time voice trading assistant powered by Gemini Live API on G
 requires-python = ">=3.11"
 dependencies = [
     "google-genai>=1.44.0",
-    "google-cloud-aiplatform>=1.50.0",
+    "google-cloud-aiplatform>=1.147.0",
     "ccxt>=4.0.0",
     "numpy>=1.26.0",
     "fastapi>=0.115.0",
